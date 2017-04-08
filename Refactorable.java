@@ -17,6 +17,10 @@ public class Refactorable {
 			outstanding += each.getAmount();
 		}
 		
+		printDetails(outstanding);
+	}
+
+	private void printDetails(double outstanding) {
 		// Print Details
 		System.out.println("name: " + _name);
 		System.out.println("amount: " + outstanding);
