@@ -9,10 +9,7 @@ public class Refactorable {
 		Enumeration e = _orders.elements();
 		double outstanding = 0.0;
 		
-		// print banner
-		System.out.println("*************************");
-		System.out.println("***** Customer Owes *****");
-		System.out.println("*************************");
+		printBanner();
 		
 		// Calculate outstanding 
 		while(e.hasMoreElements()){
@@ -23,5 +20,12 @@ public class Refactorable {
 		// Print Details
 		System.out.println("name: " + _name);
 		System.out.println("amount: " + outstanding);
+	}
+
+	private void printBanner() {
+		// print banner
+		System.out.println("*************************");
+		System.out.println("***** Customer Owes *****");
+		System.out.println("*************************");
 	}
 }
